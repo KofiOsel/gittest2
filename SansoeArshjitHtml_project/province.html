@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Counter</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="country.css">
+    <script src="main.js" defer></script>
+    <script src="province.js" defer></script>
+</head>
+<body>
+<header>
+    <img class="logo" src="Images/Single%20virion%20with%20no%20background_adobespark.png" alt="logo">
+    <nav>
+        <ul class="nav__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="global.html">Global</a></li>
+            <li><a href="country.html">Country</a></li>
+            <li><a href="province.html">Province</a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="contact.html">
+        <button>Contact Us</button>
+    </a>
+</header>
+<div class="container">
+    <section>
+        <h1 class="title">Province COVID-19 Statistics</h1>
+        <select id="country" name="country">
+            <option value="Australia">Australia</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Canada">Canada</option>
+            <option value="Chile">Chile</option>
+            <option value="China">China</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Denmark">Denmark</option>
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+            <option value="India">India</option>
+            <option value="Italy">Italy</option>
+            <option value="Japan">Japan</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Peru">Peru</option>
+            <option value="Russia">Russia</option>
+            <option value="Spain">Spain</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Ukraine">Ukraine</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="US">United States of America</option>
+        </select>
+        <button class="fetchData" id="fetchDataButton">View</button>
+        <div class="displayData" style="display: none">
+            <div class="content">
+                <p>Last refreshed:</p>
+                <div id="lastRefreshed"></div>
+            </div>
+        </div>
+        <table id="table">
+            <tr>
+                <th>Province</th>
+                <th>Cases</th>
+                <th>Deaths</th>
+            </tr>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+</div>
+</body>

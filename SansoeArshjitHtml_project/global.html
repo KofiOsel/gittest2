@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Covid Counter</title>
+
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="global.css">
+    <script rel="script" src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+    <script rel="script" src="main.js" defer></script>
+    <script rel="script" src="global.js" defer></script>
+    <script rel="script" src="charts.js" defer></script>
+</head>
+<body>
+<header>
+    <img class="logo" src="Images/Single%20virion%20with%20no%20background_adobespark.png" alt="logo">
+    <nav>
+        <ul class="nav__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="global.html">Global</a></li>
+            <li><a href="country.html">Country</a></li>
+            <li><a href="province.html">Province</a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="contact.html">
+        <button>Contact Us</button>
+    </a>
+</header>
+<div class="container">
+    <section>
+        <h1 class="title">Global COVID-19 Statistics</h1>
+        <button class="fetchData" id="getDataButton">View</button>
+        <div class="displayData" style="display: none">
+            <div class="content">
+                <p>Confirmed Cases:</p>
+                <div id="cases"></div>
+            </div>
+            <div class="content">
+                <p>Deaths:</p>
+                <div id="deaths"></div>
+            </div>
+            <div class="content">
+                <p>Last refreshed:</p>
+                <div id="lastRefreshed"></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <canvas id="myChart" width="1000" height="700"></canvas>
+    </section>
+
+</div>
+
+</body>
+</html>

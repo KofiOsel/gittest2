@@ -1,0 +1,12 @@
+.center-text {
+    text-align: center;
+}
+
+#cases, #deaths, #lastRefreshed {
+    font-weight: bold;
+}
+
+#myChart {
+    width: 100px;
+    height: 700px;
+}
