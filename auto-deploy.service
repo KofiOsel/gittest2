@@ -1,0 +1,6 @@
+[Unit]
+Description=UNIX SERVER FINAL PROJECT: Automatically builds the website on Jekyll port 4000
+[Service]
+ExecStart=/usr/bin/ /usr/bin/auto-deploy.py
+[Install]
+WantedBy=multi-user.target
