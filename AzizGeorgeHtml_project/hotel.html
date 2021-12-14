@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hotels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="h_style.css">
+  </head>
+  <body>
+
+    <!-- header -->
+    <header>
+      <nav class = "navbar">
+        <div class = "container">
+          <a href = "index.html" class = "navbar-brand">Hotels</a>
+          <div class = "navbar-nav">
+            <a href = "home_final.html">home</a>
+            <a href = "city.html">Cities</a>
+            <a href = "hotel.html">Hotel</a>
+			<a href = "book_now.html">Book</a>
+            <a href = "about.html">About Us</a>
+          </div>
+        </div>
+      </nav>
+      <div class = "banner">
+        <div class = "container">
+          <h1 class = "banner-title">
+            <span>Hotels</span> Book Now
+          </h1>
+          <p>everything that you want to know about the hotels in Egypt</p>
+          <form>
+            <input type = "text" class = "search-input" placeholder="find your hotel . . .">
+            <button type = "submit" class = "search-btn">
+              <i class = "fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <!-- end of header -->
+
+
+    <!-- blog -->
+    <section class = "blog" id = "blog">
+      <div class = "container">
+        <div class = "title">
+          <h2>Best Hotels & Places To Stay</h2>
+        </div>
+        <div class = "blog-content">
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <a href="https://www.google.com/maps/place/Rixos+Sharm+El+Sheikh+Adult+Friendly/@28.0300561,34.4363705,15z/data=!4m2!3m1!1s0x0:0x78036f19129b010d?sa=X&ved=2ahUKEwi79MmnhOD0AhWcj3IEHbsWAkIQ_BJ6BAgSEAU">
+			  <img src = "h_rixo.jpg" id = "Rixo"  onmouseover="rixoHover(this);" onmouseout="rixoUnhover(this);"></a>
+              <span><i class = "far fa-heart"></i></span>
+            </div>
+            <div class = "blog-text">
+              <h2>Rixos Sharm El Sheikh</h2>
+              <p>The Rixos Sharm El Sheikh offers 660 luxurious and elegant rooms, 
+			     conference rooms, 7 swimming pools, 1 main restaurant, 7 a la carte 
+				 restaurants, 9 bars and spa and wellness facilities. "Ultra 
+				 all-inclusive" resort.</p>
+              <a href = "book_now.html">View deal</a>
+            </div>
+          </div>
+		  <script>
+			function rixoHover(element) {
+				element.setAttribute('src', 'rixo.png');
+			}
+
+			function rixoUnhover(element) {
+				element.setAttribute('src', 'h_rixo.jpg');
+			}
+		  
+		  </script>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <a href="https://www.google.com/maps/place/Cairo+Pyramids+-+Steigenberger+-Hotel/@29.9927235,31.1258876,15z/data=!4m2!3m1!1s0x0:0xd0f3717138e921cd?sa=X&ved=2ahUKEwiMj-v6g-D0AhX9mHIEHUL6BEAQ_BJ6BAgWEAU">
+			  <img src = "h_steig.jpg" id = "Steig" onmouseover="steigHover(this);" onmouseout="steigUnhover(this);"></a>
+              <span><i class = "far fa-heart"></i></span>
+            </div>
+            <div class = "blog-text">
+              <h2>Steigenberger Pyramids Cairo</h2>
+              <p>Footsteps away from the Great Pyramids of Giza, the Cairo Pyramids 
+			     Hotel is where the glamorous history of Egypt and its world famous 
+				 hospitality meet. The hotel is the perfect starting point for 
+				 sightseeing, relaxation and business meetings</p>
+              <a href = "book_now.html">View deal</a>
+            </div>
+          </div>
+		  <script>
+			function steigHover(element) {
+				element.setAttribute('src', 'steig.png');
+			}
+
+			function steigUnhover(element) {
+				element.setAttribute('src', 'h_steig.jpg');
+			}
+		  
+		  </script>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <a href="https://www.google.com/maps/place/Hotel+Sofitel+Winter+Palace+Luxor/@25.6966811,32.6371333,15z/data=!4m2!3m1!1s0x0:0x50ba0a3c1fb57825?sa=X&ved=2ahUKEwikrbfhg-D0AhXJhHIEHaxQDDUQ_BJ6BAgfEAU">
+			  <img src = "h_LuxorPalace.jpg" id = "LuxorPalace" onmouseover="luxorHover(this);" onmouseout="luxorUnhover(this);"></a>
+              <span><i class = "far fa-heart"></i></span>
+            </div>
+            <div class = "blog-text">
+              <h2>Hotel Sofitel Winter Palace Luxor</h2>
+              <p>Built in the 19th century, this upscale colonial-style hotel has a 
+			     large landscaped garden and views of the Nile and the Theban necropolis. 
+				 It is a 6 minute walk from Luxor Temple and 10 km from Luxor International Airport.</p>
+              <a href = "book_now.html">View deal</a>
+            </div>
+          </div>
+		  <script>
+			function luxorHover(element) {
+				element.setAttribute('src', 'LuxorPalace.png');
+			}
+
+			function luxorUnhover(element) {
+				element.setAttribute('src', 'h_LuxorPalace.jpg');
+			}
+		  
+		  </script>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <a href="https://www.google.com/maps/place/Fairmont+Nile+City+Hotel,+Cairo/@30.0720303,31.2281037,15z/data=!4m2!3m1!1s0x0:0x3f7e03a153cbeafc?sa=X&ved=2ahUKEwjG_LDEg-D0AhWmmHIEHer0DpUQ_BJ6BAgbEAU">
+			  <img src = "h_FairmontNile.jpg" id = "Fairmont" onmouseover="fairmontHover(this);" onmouseout="fairmontUnhover(this);"></a>
+              <span><i class = "far fa-heart"></i></span>
+            </div>
+            <div class = "blog-text">
+              <h2>Fairmont Nile City</h2>
+              <p>Fairmont Nile City is a luxury hotel located in Cairo, Egypt and is a part of the 
+			     global Fairmont Hotels and Resorts brand. The hotel has 531 rooms, 8 restaurants, 
+				 and 25 floors and is located alongside the Nile River.</p>
+              <a href = "book_now.html">View deal</a>
+            </div>
+          </div>
+		  <script>
+			function fairmontHover(element) {
+				element.setAttribute('src', 'fairmont.png');
+			}
+
+			function fairmontUnhover(element) {
+				element.setAttribute('src', 'h_FairmontNile.jpg');
+			}
+		  
+		  </script>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <a href="https://www.google.com/maps/@24.085498,32.8792112,15z">
+			  <img src = "h_pyramisa.jpg" id = "Pyramisa" onmouseover="pyramisaHover(this);" onmouseout="pyramisaUnhover(this);"></a>
+              <span><i class = "far fa-heart"></i></span>
+            </div>
+            <div class = "blog-text">
+              <h2>Pyramisa Isis Island Aswan</h2>
+              <p> An exotic resort on an island in the middle of the Nile positioned near  the 
+			      center of Aswan. Over 28 acres of landscaped gardens with  magnificent views 
+				  of the Nile, mountains and Pharaonic relics. Pyramisa  Isis Resort is a few 
+				  minutes sailing to Agha Khan Mausoleum and downtown  shopping area. </p>
+              <a href = "book_now.html">Read More</a>
+            </div>
+          </div>
+		  <script>
+			function pyramisaHover(element) {
+				element.setAttribute('src', 'pyramisa.png');
+			}
+
+			function pyramisaUnhover(element) {
+				element.setAttribute('src', 'h_pyramisa.jpg');
+			}
+		  
+		  </script>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <a href="https://www.google.com/maps/place/Hilton+Alexandria+Corniche/@31.2616451,29.9837383,15z/data=!4m8!3m7!1s0x0:0x397ed68805937f51!5m2!4m1!1i2!8m2!3d31.2616357!4d29.9837519">
+			  <img src = "h_corniche.jpg" id = "Corniche" onmouseover="cornicheHover(this);" onmouseout="cornicheUnhover(this);"></a>
+              <span><i class = "far fa-heart"></i></span>
+            </div>
+            <div class = "blog-text">
+              <h2>Hilton Alexandria Corniche</h2>
+              <p>Whether you're conducting business, keeping up with a fitness routine or looking 
+			     to spend quality time with your family, Hilton Alexandria Corniche is here to make 
+				 the most of your stay by offering the services you need, the amenities you expect, 
+				 and the extras you deserve.</p>
+              <a href = "book_now.html">Read More</a>
+            </div>
+          </div>
+		  <script>
+			function cornicheHover(element) {
+				element.setAttribute('src', 'corniche.png');
+			}
+
+			function cornicheUnhover(element) {
+				element.setAttribute('src', 'h_corniche.jpg');
+			}
+		  
+		  </script>
+          <!-- end of item -->
+        </div>
+      </div>
+    </section>
+    <!-- end of blog -->
+
+
+    <!-- footer -->
+    <footer>
+      <div class = "social-links">
+        <a href = "#"><i class = "fab fa-facebook-f"></i></a>
+        <a href = "https://twitter.com/EgyptTourism5"><i class = "fab fa-twitter"></i></a>
+        <a href = "#"><i class = "fab fa-instagram"></i></a>
+        <a href = "#"><i class = "fab fa-pinterest"></i></a>
+      </div>
+      <span>Follow us</span>
+    </footer>
+    <!-- end of footer -->
+    
+    
+  </body>
+</html>
